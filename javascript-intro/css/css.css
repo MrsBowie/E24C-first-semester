@@ -4,10 +4,10 @@
  **/
 
 /* Define variables in the :root */
- :root {
+/* :root {
    --contrast: lime;
    --backgr: #000;
- }
+ }*/
 
 /* Use your variables on elements */
  main {
