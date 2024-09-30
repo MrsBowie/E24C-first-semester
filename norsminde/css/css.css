@@ -2,27 +2,62 @@
  * file: css/css.css
  * purpose: styling
  **/
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+ 
+ /* TJEK FONTEN FANTASY UD*/
 
 /* Define variables in the :root */
  :root {
    --contrast: rgb(255, 0, 0);
    --backgr: #fa9dc2;
+   --grøn:rgb(176, 29, 29);
+   --mørkgrøn:rgb(225, 91, 19);
+ }
+
+ h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
  }
 
 /* Use your variables on elements */
  main {
-   color: var(--contrast);
-   background-color: var(--backgr);
+   color: var(--mørkgrøn);
+   background-color: var(--grøn);
  }
 
 body {
   margin: 0;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forside {
+  background-image: url(../images/æbler.jpg);
+}
+
+.hjælpos {
+  background-image: url(../images/æblekurv.jpg);
+}
+
+.æblemost {
+  background-image: url(../images/æblemost.jpg);
+}
+
+.aktivitet {
+  background-image: url(../images/pluk.jpg);
 }
 
 .topnav {
   overflow: hidden;
   background-color: #ffd8d9;
+}
+
+#mytopnav {
+  display: flex;
+  justify-content: space-around;
 }
 
 .topnav a {
@@ -45,7 +80,50 @@ body {
   color: white;
 }
 
-.topnav .icon {
+.hjælp,
+.æble,
+.aktiviteter {
+  overflow: hidden;
+  background-color: #ffd8d9;
+}
+
+#hjælp,
+#æble,
+#aktiviteter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hjælp a,
+.æble a,
+.aktiviteter a {
+  float: left;
+  display: block;
+  color: #010101;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.hjælp a:hover,
+.æble a:hover,
+.aktiviteter a:hover {
+  background-color: #fca1a1;
+  color: black;
+}
+
+.hjælp a.active,
+.æble a.active,
+.aktiviteter a.active {
+  background-color: #f84545;
+  color: white;
+}
+
+.topnav .icon,
+.hjælp .icon,
+.æble .icon,
+.aktiviteter .icon {
   display: none;
 }
 
